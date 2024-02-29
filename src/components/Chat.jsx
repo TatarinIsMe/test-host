@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import $ from "jquery";
+// import $ from "jquery";
 
 import styles from "../styles/Chat.module.css";
 import Messages from "./Messages";
