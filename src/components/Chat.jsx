@@ -12,21 +12,21 @@ const Chat = () => {
         const data = {
             name: 'textMes',
           };
-              $.ajax({
-        // url: 'http://localhost:8888/basic/web/index.php?r=post%2Findex',
-    //    url: 'http://localhost:8888/basic/web/post/ajax',
-        url: 'http://tatarin.site/back/web/post/ajax',
-        type: 'post',
-        dataType: 'json',
-        data: {param1: textMes},
-        success: function(res){
-            console.log('hi');
-        },
-        error: function(er){
-            console.log(er.responseText);
-            setState((_state) => [..._state, {user: "admin", message: er.responseText}])
-        }
-});
+//               $.ajax({
+//         // url: 'http://localhost:8888/basic/web/index.php?r=post%2Findex',
+//     //    url: 'http://localhost:8888/basic/web/post/ajax',
+//         url: 'http://tatarin.site/back/web/post/ajax',
+//         type: 'post',
+//         dataType: 'json',
+//         data: {param1: textMes},
+//         success: function(res){
+//             console.log('hi');
+//         },
+//         error: function(er){
+//             console.log(er.responseText);
+//             setState((_state) => [..._state, {user: "admin", message: er.responseText}])
+//         }
+// });
       }
     const [state, setState] = useState([{user: "sal", message: "Добрый день,(имя пользователя). Вас приветствует виртуальный помомошник школы Гармония. Рад вас видеть. Чем я могу помочь? Выбирете нужную категорию"}]);
     const [message, setMessage] = useState("");
